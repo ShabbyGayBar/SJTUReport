@@ -1,0 +1,33 @@
+% !TeX encoding = UTF-8
+\documentclass{sjtureport}
+\input{setup}
+
+\begin{document}
+
+%TC:ignore
+
+\input{contents/titlepage}
+\input{contents/abstract}
+\tableofcontents
+
+%TC:endignore
+
+% 正文内容
+\input{contents/intro}
+\input{contents/math_and_citations}
+\input{contents/floats}
+\input{contents/summary}
+
+%TC:ignore
+
+\nocite{*}
+\printbibliography[heading=bibintoc]
+
+\appendix
+\captionsetup{list=no} % 附录中图表不加入索引
+\input{contents/app_maxwell_equations}
+\input{contents/app_flow_chart}
+
+%TC:endignore
+
+\end{document}
