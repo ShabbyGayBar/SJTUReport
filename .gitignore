@@ -11,7 +11,6 @@
 *.fot
 *.cb
 *.cb2
-*.pdf
 
 ## Intermediate documents:
 *.dvi
@@ -257,4 +256,4 @@ build/
 
 SJTUTeX-v1/
 SJTUTeX-v2/
-dev-v2.pdf
+*.pdf
