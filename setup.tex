@@ -40,9 +40,9 @@
 %     gbpub=false             禁用出版信息缺失处理
 \usepackage[backend=biber,style=gb7714-2015]{biblatex}
 % 文献表字体
-% \renewcommand{\bibfont}{\zihao{5}\fixedlineskip{15.6bp}}
+\renewcommand{\bibfont}{\zihao{5}\setbaselineskip{16bp}}
 % 文献表条目间的间距
-\setlength{\bibitemsep}{0pt}
+\setlength{\bibitemsep}{3bp plus 1pt}
 % 导入参考文献数据库
 \addbibresource{refs.bib}
 
@@ -122,8 +122,8 @@
 \sisetup{mode=match} % 与文本/数学环境字体匹配
 
 % 定理环境宏包
-\usepackage{ntheorem}
-% \usepackage{amsthm}
+\usepackage{amsthm}
+% \usepackage{ntheorem}
 
 % 绘图宏包
 \usepackage{tikz}
